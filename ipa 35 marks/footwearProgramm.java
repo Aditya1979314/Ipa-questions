@@ -3,51 +3,6 @@ import java.util.*;
 
 public class footwearProgramm{
 
-public static class Footwear{
-    private int footwearId,price;
-    private String footwearType,footwearName;
-
-    public Footwear(int footwearId,String footwearType , String footwearName, int price){
-        this.footwearId = footwearId;
-        this.footwearType = footwearType;
-        this.footwearName = footwearName;
-        this.price = price;
-    }
-
-      int getfootwearid(){
-        return footwearId;
-    }
-
-      int getprice(){
-        return price;
-    }
-
-      String getfootwearname(){
-        return footwearName;
-    }
-
-      String getfootweartype(){
-        return footwearType;
-    }
-
-     void setfootwearid(int id){
-        this.footwearId = id;
-    }
-
-      void setprice(int p){
-        this.price =p;
-    }
-
-     void setfootwearname(String name){
-        this.footwearName = name;
-    }
-
-     void setfootweartype(String t){
-        this.footwearType = t;
-    }
-
-}
-
 static int getCountByType(Footwear[] arr,String type){
     int count = 0;
     for(int i=0;i<arr.length;i++){
@@ -108,6 +63,51 @@ static Footwear getSecondHighestPriceByBrand(Footwear[] arr,String name){
         Footwear ans = getSecondHighestPriceByBrand(arr,"reebok");
         System.out.println(ans.getprice());
     }
+}
+
+ class Footwear{
+    private int footwearId,price;
+    private String footwearType,footwearName;
+
+    public Footwear(int footwearId,String footwearType , String footwearName, int price){
+        this.footwearId = footwearId;
+        this.footwearType = footwearType;
+        this.footwearName = footwearName;
+        this.price = price;
+    }
+
+      int getfootwearid(){
+        return footwearId;
+    }
+
+      int getprice(){
+        return price;
+    }
+
+      String getfootwearname(){
+        return footwearName;
+    }
+
+      String getfootweartype(){
+        return footwearType;
+    }
+
+     void setfootwearid(int id){
+        this.footwearId = id;
+    }
+
+      void setprice(int p){
+        this.price =p;
+    }
+
+     void setfootwearname(String name){
+        this.footwearName = name;
+    }
+
+     void setfootweartype(String t){
+        this.footwearType = t;
+    }
+
 }
 
 

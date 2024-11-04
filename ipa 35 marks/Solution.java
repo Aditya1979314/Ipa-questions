@@ -3,46 +3,6 @@ import java.util.*;
 
 public class Solution{
 
-public static class Motel{
-private int motelId,noOfRoomsBooked;
-private String motelName,cabFacility,dateOfBooking;
-private double totalBill;
-
-public Motel(int motelId,String motelName,String dateOfBooking,int noOfRoomsBooked,String cabFacility,double totalBill){
-    this.motelId = motelId;
-    this.noOfRoomsBooked = noOfRoomsBooked; 
-    this.motelName = motelName;
-    this.cabFacility = cabFacility;
-    this.dateOfBooking = dateOfBooking;
-    this.totalBill = totalBill;
-}
-
-int getmotelid(){
-    return motelId;
-}
-
-int getnoofrooomsbooked(){
-    return noOfRoomsBooked;
-}
-
-String getmotelname(){
-    return motelName;
-}
-
-String getcabfacility(){
-    return cabFacility;
-}
-
-String getdateofbooking(){
-    return dateOfBooking;
-}
-
-double gettotalbill(){
-    return totalBill;
-}
-
-
-}
 
 static int totalNoOfRoomsBooked(Motel[] arr, String cabfacility){
 int count = 0;
@@ -81,5 +41,46 @@ return count;
         System.out.println("No such rooms booked");
     }
     }
+}
+
+ class Motel{
+private int motelId,noOfRoomsBooked;
+private String motelName,cabFacility,dateOfBooking;
+private double totalBill;
+
+public Motel(int motelId,String motelName,String dateOfBooking,int noOfRoomsBooked,String cabFacility,double totalBill){
+    this.motelId = motelId;
+    this.noOfRoomsBooked = noOfRoomsBooked; 
+    this.motelName = motelName;
+    this.cabFacility = cabFacility;
+    this.dateOfBooking = dateOfBooking;
+    this.totalBill = totalBill;
+}
+
+int getmotelid(){
+    return motelId;
+}
+
+int getnoofrooomsbooked(){
+    return noOfRoomsBooked;
+}
+
+String getmotelname(){
+    return motelName;
+}
+
+String getcabfacility(){
+    return cabFacility;
+}
+
+String getdateofbooking(){
+    return dateOfBooking;
+}
+
+double gettotalbill(){
+    return totalBill;
+}
+
+
 }
 
